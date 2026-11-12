@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peta Keberagaman Budaya Indonesia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">🇮🇩 Jelajah Budaya</div>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#peta">Peta Budaya</a>
+            <a href="#wilayah">Wilayah</a>
+        </nav>
+    </header>
+
+    <!-- HALAMAN PEMBUKA -->
+    <section class="hero" id="beranda">
+
+        <span class="label">ENSIKLOPEDIA BUDAYA NUSANTARA</span>
+
+        <h1>
+            Keberagaman Budaya<br>
+            <span>Indonesia</span>
+        </h1>
+
+        <p>
+            Kenali kekayaan budaya Indonesia melalui peta interaktif.
+            Jelajahi rumah adat, pakaian adat, tarian tradisional,
+            dan alat musik dari berbagai daerah.
+        </p>
+
+        <a href="#peta" class="tombol">
+            Mulai Menjelajah →
+        </a>
+
+    </section>
+
+    <!-- PETA INDONESIA -->
+    <section class="bagian" id="peta">
+
+        <div class="judul">
+            <span class="label">JELAJAHI NUSANTARA</span>
+
+            <h2>Peta Keberagaman Budaya Indonesia</h2>
+
+            <p>
+                Klik nama wilayah pada peta untuk melihat
+                kekayaan budayanya.
+            </p>
+        </div>
+
+        <div class="peta-container">
+
+            <img
+                src="assets/peta-indonesia.jpg"
+                alt="Peta Keberagaman Budaya Indonesia"
+                class="gambar-peta"
+            >
+
+            <div id="tombolPeta"></div>
+
+        </div>
+
+        <p class="petunjuk">
+            ✦ Pilih salah satu wilayah untuk melihat informasi budaya.
+        </p>
+
+    </section>
+
+    <!-- DAFTAR WILAYAH -->
+    <section class="bagian" id="wilayah">
+
+        <div class="judul">
+
+            <span class="label">KENALI BUDAYA DAERAH</span>
+
+            <h2>Jelajahi Setiap Wilayah</h2>
+
+            <p>
+                Pilih wilayah yang ingin kamu pelajari.
+            </p>
+
+        </div>
+
+        <div class="daftar-wilayah" id="daftarWilayah"></div>
+
+    </section>
+
+    <!-- PENUTUP -->
+    <section class="penutup">
+
+        <h2>
+            Berbeda-beda Budaya,<br>
+            Tetap Satu Indonesia.
+        </h2>
+
+        <p>
+            Kenali, hargai, dan lestarikan keberagaman budaya Indonesia.
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Jelajah Budaya Indonesia |
+            Media Pembelajaran Interaktif
+        </p>
+    </footer>
+
+    <!-- POPUP INFORMASI BUDAYA -->
+    <div class="modal" id="modal">
+
+        <div class="modal-box">
+
+            <button
+                class="tutup"
+                onclick="tutupModal()"
+                aria-label="Tutup"
+            >
+                ×
+            </button>
+
+            <div class="modal-header">
+
+                <img
+                    src="assets/peta-indonesia.jpg"
+                    id="gambarDaerah"
+                    alt="Ilustrasi budaya daerah"
+                >
+
+                <div class="lapisan"></div>
+
+                <div class="judul-modal">
+
+                    <span>KEKAYAAN BUDAYA NUSANTARA</span>
+
+                    <h2 id="namaDaerah"></h2>
+
+                    <p id="deskripsiDaerah"></p>
+
+                </div>
+
+            </div>
+
+            <div class="isi-modal">
+
+                <h3>Warisan Budaya Daerah</h3>
+
+                <div class="galeri" id="galeriBudaya"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
