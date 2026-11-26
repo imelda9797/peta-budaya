@@ -1,11 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Peta Keberagaman Budaya Indonesia</title>
+    <meta name="theme-color" content="#7655d9">
+    <meta name="description" content="Jelajahi keberagaman budaya Indonesia melalui peta interaktif dan kenali kekayaan budaya Nusantara.">
+
+    <title>Jelajah Budaya Indonesia</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,21 +28,21 @@
     <!-- HALAMAN PEMBUKA -->
     <section class="hero" id="beranda">
 
-        <span class="label">ENSIKLOPEDIA BUDAYA NUSANTARA</span>
+        <span class="label">✨ ENSIKLOPEDIA BUDAYA NUSANTARA</span>
 
         <h1>
-            Keberagaman Budaya<br>
-            <span>Indonesia</span>
+            Yuk, Jelajahi<br>
+            <span>Budaya Indonesia!</span>
         </h1>
 
         <p>
-            Kenali kekayaan budaya Indonesia melalui peta interaktif.
-            Jelajahi rumah adat, pakaian adat, tarian tradisional,
-            dan alat musik dari berbagai daerah.
+            Indonesia punya banyak sekali budaya yang menarik.
+            Ayo berpetualang mengenal rumah adat, pakaian adat,
+            tarian tradisional, dan alat musik dari berbagai daerah!
         </p>
 
         <a href="#peta" class="tombol">
-            Mulai Menjelajah →
+            Mulai Menjelajah <span>➜</span>
         </a>
 
     </section>
@@ -49,20 +51,20 @@
     <section class="bagian" id="peta">
 
         <div class="judul">
-            <span class="label">JELAJAHI NUSANTARA</span>
+            <span class="label">🌈 JELAJAHI NUSANTARA</span>
 
             <h2>Peta Keberagaman Budaya Indonesia</h2>
 
             <p>
-                Klik nama wilayah pada peta untuk melihat
-                kekayaan budayanya.
+                Ada banyak budaya menarik yang menunggu untuk kamu kenali.
+                Klik nama wilayah pada peta, yuk!
             </p>
         </div>
 
         <div class="peta-container">
 
             <img
-                src="assets/peta-indonesia.jpg"
+                src="assets/peta-budaya.jpeg"
                 alt="Peta Keberagaman Budaya Indonesia"
                 class="gambar-peta"
             >
@@ -72,7 +74,8 @@
         </div>
 
         <p class="petunjuk">
-            ✦ Pilih salah satu wilayah untuk melihat informasi budaya.
+            💡 Tips: Klik salah satu nama wilayah pada peta untuk melihat
+            kekayaan budayanya!
         </p>
 
     </section>
@@ -82,12 +85,13 @@
 
         <div class="judul">
 
-            <span class="label">KENALI BUDAYA DAERAH</span>
+            <span class="label">🎨 KENALI BUDAYA DAERAH</span>
 
             <h2>Jelajahi Setiap Wilayah</h2>
 
             <p>
-                Pilih wilayah yang ingin kamu pelajari.
+                Pilih daerah yang ingin kamu kunjungi.
+                Setiap wilayah punya keunikan budaya tersendiri!
             </p>
 
         </div>
@@ -101,11 +105,12 @@
 
         <h2>
             Berbeda-beda Budaya,<br>
-            Tetap Satu Indonesia.
+            Tetap Satu Indonesia! 🇮🇩
         </h2>
 
         <p>
             Kenali, hargai, dan lestarikan keberagaman budaya Indonesia.
+            Karena budaya kita adalah kekayaan bangsa!
         </p>
 
     </section>
@@ -121,12 +126,13 @@
     <!-- POPUP INFORMASI BUDAYA -->
     <div class="modal" id="modal">
 
-        <div class="modal-box">
+        <div class="modal-box" tabindex="-1">
 
             <button
                 class="tutup"
                 onclick="tutupModal()"
-                aria-label="Tutup"
+                aria-label="Tutup popup"
+                title="Tutup"
             >
                 ×
             </button>
@@ -134,7 +140,7 @@
             <div class="modal-header">
 
                 <img
-                    src="assets/peta-indonesia.jpg"
+                    src="assets/rumah_aceh.jpg"
                     id="gambarDaerah"
                     alt="Ilustrasi budaya daerah"
                 >
@@ -143,7 +149,7 @@
 
                 <div class="judul-modal">
 
-                    <span>KEKAYAAN BUDAYA NUSANTARA</span>
+                    <span>✨ KEKAYAAN BUDAYA NUSANTARA</span>
 
                     <h2 id="namaDaerah"></h2>
 
@@ -155,7 +161,7 @@
 
             <div class="isi-modal">
 
-                <h3>Warisan Budaya Daerah</h3>
+                <h3>🎉 Yuk, Kenali Budayanya!</h3>
 
                 <div class="galeri" id="galeriBudaya"></div>
 
